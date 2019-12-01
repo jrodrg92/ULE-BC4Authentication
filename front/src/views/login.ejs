@@ -1,0 +1,28 @@
+<% include partials/headerMain%>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="/frontend/pictures/eosjs1.png" id="icon" alt="User Icon" />
+      </div>
+  
+
+    <form id="container" action='/login' method='POST'>
+      <div class="form-group">
+          <input type="text" id="id_Usuario" class="fadeIn second" name="id_Usuario" placeholder="login">
+          <input type="password" id="pswd_Usuario" class="fadeIn third" name="pswd_Usuario" placeholder="password">
+          <input type="submit" class="fadeIn fourth" value="Log In">
+      </div>
+    </form>
+       
+    <form id="container1" action='/showaddUser' method='GET'>
+      <div id="formFooter">
+         <a class="underlineHover" href='/showaddUser'>Add User</a>
+      </div>
+    </form>
+
+    </div>
+  </div>
+  <% include partials/footerMain%>

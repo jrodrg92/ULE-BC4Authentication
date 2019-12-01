@@ -1,0 +1,16 @@
+<% include partials/headerMain%>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="/frontend/pictures/eosjs1.png" id="icon" alt="User Icon" />
+      </div>
+      <form id="container" action='/modUser' method='POST'>
+        <div class="form-group">
+          <input type="text" id="email_Usuario" class="fadeIn second" name="email_Usuario" placeholder="email adress">
+          <input type="submit" class="fadeIn fourth" value="Mod user">
+        </div>
+      </form>
+    </div>
+</div>
+<% include partials/footerMain%>

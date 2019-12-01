@@ -1,0 +1,44 @@
+<% include partials/headerMain%>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div  style="width: 50%; height: 50% ; margin-bottom: 5%; padding-left: 20%" class="fadeIn first">
+                        <img src="/frontend/pictures/eosjs1.png" id="icon" alt="User Icon" />
+                    </div>
+                    <div class="col-lg-3" id="infoUser" style="margin-left: 300px;margin-bottom: 20px;">
+                        <table>
+                            <tr>
+                              <td><h>Nombre: </h></td>
+                              <td><p id="nom_Usuario" class="fadeIn second" name="nom_Usuario"><%=nom_Usuario%></p></td>
+                              <td style="margin-left: 10%">
+                                <form id="container" action='/cerrarSesion' method='GET'>
+                                  <div class="form-group">
+                                    <input type="submit" class="fadeIn fourth" value="Exit">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><h>E-mail: </h></td>
+                              <td><p id="email_Usuario" class="fadeIn second" name="email_Usuario"><%=email_Usuario%></p></td>
+                            </tr>
+                          </table>
+                          <form id="container" action='/showmodUser' method='GET'>
+                            <div class="form-group">
+                              <input type="submit" class="fadeIn fourth" value="Modificar Email">
+                            </div>
+                          </form>
+                          <form id="container" action='/deleteUser' method='GET'>
+                            <div class="form-group">
+                              <input type="submit" class="fadeIn fourth" value="Borrar usuario">
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include partials/footerMain%>
